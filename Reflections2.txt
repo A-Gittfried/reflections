@@ -4,3 +4,12 @@ When you initialise a repository, it creates the folder .git, which
 contains all the tracked data and commit histories. 
 We need to do it so we can use all the cool git features within that
 folder and to track any associated files
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+The staging area contains all changes/files that will be added to the
+repository in the next commit. The working directory is just the 
+folder we are currently in.
+It makes sense that changes are not commited automatically, but that
+you can choose which you want to do. That way things that already 
+exist can be commited in stages, rather than as a big bundle.
