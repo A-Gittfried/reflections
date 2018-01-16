@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to 
+do it?
+When you initialise a repository, it creates the folder .git, which
+contains all the tracked data and commit histories. 
+We need to do it so we can use all the cool git features within that
+folder and to track any associated files
