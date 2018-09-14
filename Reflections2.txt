@@ -13,3 +13,43 @@ folder we are currently in.
 It makes sense that changes are not commited automatically, but that
 you can choose which you want to do. That way things that already 
 exist can be commited in stages, rather than as a big bundle.
+
+How can you use the staging area to make sure you have one commit per
+logical change?
+Since you can decide what goes from your working directory to your
+staging area, you simply move the thing you want to commit there. If
+there are more things in your staging area than you want, you can 
+clear the staging area and add the things you want.
+
+What are some situations when branches would be helpful in keeping 
+your history organized? How would branches help?
+When you want to make a change, but want to leave your current 
+version intact, creating a new branch allows you to work on the 
+change without losing the current version. This keeps your history
+organised so you can see where every version of your project is 
+coming from. It also helps keeping your ideas organised.
+
+How do the diagrams help you visualize the branch structure?
+They help because it lets you see what the parent of each commit is,
+and also makes the unreachable branch concept easy to understand.
+
+What is the result of merging two branches together? Why do we 
+represent it in the diagram the way we do?
+When merging two branches together, the lines are compared one by one
+to the file when it was split by the creation of a branch. Anything 
+that was in the original but was removed by one user is removed, 
+anything new is added, and all lines which stayed the same in both 
+are still part of the merged, final files. This is perfectly 
+represented in the diagram since the result is a true merge of the 
+two branches, as all removed stuff stays removed but all the changes
+stay.
+
+What are the pros and cons of Git's automatic merging vs. always 
+doing merges manually?
+Git is able to resolve merges very easily when two people were 
+working on separate things. When the same line was edited, Git does
+not know how to handle the conflict, and hence forces you to check 
+manually. This is quite a chore, which is a huge pro for automatic
+merging and a con for manual. However, with manual merging you always
+know exactly what has changed, whereas with Git you do not need to
+have this overarching knowledge of the code.
