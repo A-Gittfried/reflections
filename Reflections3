@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+A remote is particularly useful for accessing your work from another computer, or if 
+you are collaborating. It allows you to merge your local changes, in addition to pulling
+the changes others have made into your local directory.
