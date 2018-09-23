@@ -1,0 +1,36 @@
+When would you want to use a remote repository rather than keeping all your work local?
+A remote is particularly useful for accessing your work from another computer, or if 
+you are collaborating. It allows you to merge your local changes, in addition to pulling
+the changes others have made into your local directory.
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+The work in the remote repository may not be something which you yourself are currently
+working on, but rather a collaboration - so you do not need it accessible locally. 
+Additionally, there may be a lot that needs to be synced all of a sudden when you do not
+need access to everything that has been changed. This could take up a lot of extra time
+and data.
+
+Describe the differences between forks, clones, and branches. When would you use one 
+instead of another?
+A branch is a new version of the thing you were working on. Usually used to try out
+something new while still having a master branch with a working version of the project.
+A clone is what it sounds like - an identical copy of an entire repository. The pull 
+and push commands work on branches, not entire repositories (unless your repository 
+only has one branch). A fork is a clone but done on GitHub from one user to another,
+allowing them to edit the repository of someone else without actually changing the 
+original repository. The amount of times it has been forked is kept track of, though.
+
+What is the benefit of having a copy of the last known state of the remote stored 
+locally?
+If you're going offline, then you have all the information from the last commit on
+GitHub, and can be working on it in your own time. Also, it may be useful to inspect 
+changes that have been made to the repository, without actually incorporating any of
+those changes into the branches you are working on.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what 
+would be harder?
+Without GitHub, every merge would be manual, so that would certainly be more difficult.
+However, it would require more discussion amongst collaborators, which would probably
+be quite useful and avoid some mistakes. It also means arbirary changes, like going
+from "canols" to "canola" wouldn't require such a circus.
